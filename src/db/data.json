@@ -1,0 +1,68 @@
+{
+  "days": [
+    {
+      "day": "9.19",
+      "id": 1
+    },
+    {
+      "day": "9.20",
+      "id": 2
+    },
+    {
+      "day": "9.21",
+      "id": 3
+    },
+    {
+      "day": "9.22",
+      "id": 4
+    },
+    {
+      "day": "9.24",
+      "id": 5
+    }
+  ],
+  "todos": [
+    {
+      "day": "9.19",
+      "todo": "할일 1",
+      "isDone": false,
+      "id": 1
+    },
+    {
+      "day": "9.19",
+      "todo": "할일 2",
+      "isDone": true,
+      "id": 2
+    },
+    {
+      "day": "9.20",
+      "todo": "할일 3",
+      "isDone": false,
+      "id": 3
+    },
+    {
+      "day": "9.20",
+      "todo": "할일 4",
+      "isDone": false,
+      "id": 4
+    },
+    {
+      "day": "9.21",
+      "todo": "할일 5",
+      "isDone": true,
+      "id": 5
+    },
+    {
+      "day": "9.21",
+      "todo": "할일 6",
+      "isDone": false,
+      "id": 6
+    },
+    {
+      "day": "9.22",
+      "todo": "할일일ㄹㄹ",
+      "isDone": true,
+      "id": 7
+    }
+  ]
+}
