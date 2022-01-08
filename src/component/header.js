@@ -1,7 +1,6 @@
 import { HStack, Text, Box } from 'native-base';
 import { Link } from 'react-router-dom';
 
-//테스트
 const Header = () => {
   return (
     <HStack px={'30px'} py={'30px'} justifyContent={'space-between'}>
