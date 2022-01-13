@@ -42,12 +42,12 @@ const TodoBox = (props) => {
   }
 
   return (
-    <HStack minH={'50px'} borderWidth={'1px'} borderColor={'black'} bgColor={isDone ? '#607d8b' : ''}>
+    <HStack minH={'50px'} borderWidth={'1px'} borderColor={'black'} bgColor={isDone ? '#969696' : ''}>
       <Box w={'50px'} alignItems={'center'} justifyContent={'center'}>
         <Checkbox accessibilityLabel='todoCheck' isChecked={isDone} onChange={haldleOnChangeIsDone} />
       </Box>
       <Box h={'50px'} w={'1px'} bgColor={'black'} />
-      <Box w={'70vw'} alignItems={'center'} justifyContent={'center'}>
+      <Box w={'50vw'} alignItems={'center'} justifyContent={'center'}>
         <Text fontSize={'30px'} color={'black'}>
           {todo.todo}
         </Text>
@@ -67,7 +67,7 @@ const Todo = (props) => {
   const todos = useFetch(`http://localhost:3001/todos?day=${day}`);
 
   return (
-    <VStack space={5} px={'30px'}>
+    <VStack space={5} px={'30px'} pb={'30px'} bgColor={'#d9d9d9'}>
       <Text fontSize={'30px'} fontWeight={'bold'} color={'black'}>
         {day}
       </Text>

@@ -1,4 +1,4 @@
-import { VStack, Button, Text, TextArea } from 'native-base';
+import { VStack, Button, Text, TextArea, Box } from 'native-base';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { useRef } from 'react/cjs/react.development';
 
@@ -24,14 +24,17 @@ const CreateDay = () => {
   };
 
   return (
-    <VStack px={'30px'}>
-      <VStack space={'20px'}>
-        <Text fontSize={'20px'}>날짜</Text>
-        <TextArea ref={dayRef} />
+    <VStack px={'30px'} space={'10px'}>
+      <VStack>
+        <Text fontSize={'20px'} color={'black'} lineHeight={'normal'}>
+          날짜를 입력하세요
+        </Text>
+        <TextArea bgColor={'#03a9f4'} ref={dayRef} fontSize={'20px'} />
       </VStack>
-
       <Button onPress={createDay}>
-        <Text>저장</Text>
+        <Text fontSize={'20px'} fontWeight={'bold'}>
+          저장
+        </Text>
       </Button>
     </VStack>
   );

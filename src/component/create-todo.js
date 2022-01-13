@@ -36,13 +36,17 @@ const CreateTodo = () => {
   };
 
   return (
-    <VStack px={'30px'}>
+    <VStack px={'30px'} pb={'20px'} space={'10px'}>
       <VStack>
-        <Text fontSize={'20px'}>할일</Text>
-        <TextArea ref={todoRef} />
+        <Text fontSize={'20px'} color={'black'} lineHeight={'normal'}>
+          할일을 입력하세요
+        </Text>
+        <TextArea bgColor={'#03a9f4'} ref={todoRef} fontSize={'20px'} />
       </VStack>
       <VStack>
-        <Text fontSize={'20px'}>Day</Text>
+        <Text fontSize={'20px'} color={'black'} lineHeight={'normal'}>
+          날짜를 선택하세요
+        </Text>
         <select ref={dayRef}>
           {days.map((day, index) => (
             <option value={day.day} key={index}>
@@ -51,8 +55,10 @@ const CreateTodo = () => {
           ))}
         </select>
       </VStack>
-      <Button onPress={createTodo}>
-        <Text>{loading ? '저장중...' : '저장'}</Text>
+      <Button onPress={createTodo} mt={'10px'}>
+        <Text fontSize={'20px'} fontWeight={'bold'}>
+          {loading ? '저장중...' : '저장'}
+        </Text>
       </Button>
     </VStack>
   );

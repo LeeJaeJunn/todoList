@@ -22,7 +22,7 @@ const DayList = (props) => {
               w={'80px'}
               h={'40px'}
               bgColor={'#1976d2'}
-              borderRadius={'15px'}
+              borderRadius={'40px'}
               alignItems={'center'}
               justifyContent={'center'}
             >
