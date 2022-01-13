@@ -6,8 +6,8 @@ const Header = () => {
     <VStack px={'30px'} py={'30px'} justifyContent={'space-between'} space={10}>
       <Box alignItems={'center'}>
         <Link to={'/'}>
-          <Text fontSize={'50px'} color={'black'}>
-            나의 Todo-List CRUC
+          <Text fontSize={'50px'} fontWeight={'bold'} color={'black'}>
+            나의 Todo-List
           </Text>
         </Link>
       </Box>
