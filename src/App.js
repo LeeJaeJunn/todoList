@@ -6,24 +6,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CreateTodo from './component/create-todo';
 import CreateDay from './component/create-day';
 
-import dummy from './db/data.json';
-
 function App() {
   return (
-    <Box
-      px={'150px'}
-      py={'40px'}
-      minH={'100vh'}
-      minW={'100vw'}
-      bgColor={'#8ed1fc'}
-      // bg={{
-      //   linearGradient: {
-      //     colors: ['lightBlue.300', 'violet.800'],
-      //     start: [0, 0],
-      //     end: [1, 0],
-      //   },
-      // }}
-    >
+    <Box px={'150px'} py={'40px'} minH={'100vh'} minW={'100vw'} bgColor={'#8ed1fc'}>
       <BrowserRouter>
         <Box bgColor={'#ffffff'} minH={'50vh'} minW={'60vw'} borderRadius={'30px'}>
           <Header />
@@ -32,7 +17,7 @@ function App() {
               <DayList />
             </Route>
             <Route path='/day/:day'>
-              <Todo data={dummy.todos} />
+              <Todo />
             </Route>
             <Route path={'/create_todo'}>
               <CreateTodo />
@@ -49,7 +34,7 @@ function App() {
 
 export default App;
 
-// json-server --watch ./src/db/data.json --port 3001
+// json-server --watch ./src/_dummy/data.json --port 3001
 
 /*
   REST API

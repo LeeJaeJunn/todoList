@@ -35,14 +35,8 @@
     {
       "day": "9.19",
       "todo": "작물물질소재학 2주차 2차시",
-      "isDone": false,
+      "isDone": true,
       "id": 8
-    },
-    {
-      "day": "9.19",
-      "todo": "작물물질소재학 3주차 1차시",
-      "isDone": false,
-      "id": 9
     },
     {
       "day": "9.20",
